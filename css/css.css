@@ -1,0 +1,151 @@
+body{
+    width: 100% ;
+    height:auto;
+    padding:0px;
+    margin: 0px 0px 0px 0px;
+    border: 0;
+
+}
+/* Main container css */
+div.main-container{
+   width: 100%;
+   height: 90%;
+   min-height: 1000px;
+   margin: 0px 0px 0px 0px;
+   /* position: relative; */
+   bottom: 0px;
+
+}
+/* Footer css */
+div.footer{
+    width:80%;
+    height: 10%;
+    background-color: #017a84;
+    margin: 0px 0px 0px 0px;
+    margin: 0px 10% 0px 10%;
+    position: fixed;
+    bottom: 0; 
+    text-align: center;
+    
+}
+/* Header css */
+div.header{
+    width:97.4%;
+    height: 40%;
+    background-color: #017a84;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    padding: 0 20px 0 30px;
+
+}
+/* Content container css */
+div.container{
+    width:100%;
+    margin: 0px 0px 0px 0px;
+    /* padding: 3% 1% 0px 1%;  */
+    /* margin-top: 3%; */ 
+    /* rem, Px */
+
+}
+/* Left Nav css */
+div.left-nav{
+    width: 30%;
+    margin: 0px 0px 0px 0px;
+}
+/* Content section css */
+div.content{
+    width:70%;
+    margin: 0px 0px 0px 0px;
+}
+/* Logo style */
+div.logo{
+    width: 10%;
+}
+/* Top Nav style */
+div.main-nav{
+    width:70%;
+    color: white;
+    align-content: center;
+    text-align: center;
+}
+/* User section css */
+div.user-info{
+    width:20%;
+    text-align: right;
+}
+/* Course listing css*/
+.course-list{
+    background-color:yellow; 
+    width:100%;
+    min-height: 100%;
+    justify-self: center;
+    justify-items: center;
+    /* padding: 0.8rem; */
+
+}
+/* Course box css */
+div.course-box{
+    width:30%;
+    height: 100px;
+    background-color: #017a84;
+    margin-right: 3%;
+    position: flex;
+    
+
+}
+
+/* Logo img css */
+img.logo{
+    width: 150px;
+    height: 150px;
+}
+
+/* User profile section css */
+
+/* Login css */
+/* vh: viewport height, vw: viewport width */
+.login-page{
+    width:100vw;
+    height: 100vh;
+    background-color: #017a84;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    /* justify-content: center; */
+}
+.login-logo{
+    height:100px;
+    width: 100px;
+}
+.login-form{
+    margin-top: 95px;
+    width: 20%;
+    background-color: white;
+    padding:  50px 40px;
+        
+}
+.login-form h1 {
+    text-align: center;
+    color:#017a84;
+    margin-bottom: 20px;
+}
+.form-items {
+    margin:10px 0;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+
+.login-form button{
+    /* width: 40px;
+    height: 20px; */
+    border-radius: 2px;
+    color:white;
+    background-color: #017a84;
+    border: none;
+    padding:10px 20px;
+    margin: 0 95px;
+    font-size: 18px;
+    font-weight: bold;
+}
