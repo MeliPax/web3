@@ -149,3 +149,37 @@ img.logo{
     font-size: 18px;
     font-weight: bold;
 }
+
+
+/* courses section */
+*{
+    box-sizing: border-box;
+  }
+  .padded{
+    padding: 0.8rem;
+  }
+  .padded-tb{
+    padding: 0.8rem 0;
+  }
+  .row{
+    position: relative;
+  }
+  .course-box{
+    float: left;
+    width: 33.3333%;
+  }
+  .course{
+    height: 250px;
+    background: #a8a8a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .centerize{
+    max-width: 1080px;
+    margin: auto;
+  }
+  .course-title{
+    color: #f1f1f1;
+    font-weight: lighter;
+  }
