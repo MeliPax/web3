@@ -33,7 +33,44 @@
     <title>Lesson Page</title>
 </head>
 <body>
+<<<<<<< HEAD
     <div class="main-container">
+=======
+    <!-- courses section begins here -->
+    <div class="courses-wrapper--outer">
+    <div class="courses-wrapper--inner centerize">
+        <div class="section-heading padded">
+        <h2>Courses</h2>
+        </div>
+        <div class="courses-list row">
+            <div class="course-box padded">
+            <div class="course">
+                <div class="course-body padded">
+                <h1 class="course-title"> Literature</h1>
+                </div>
+            </div>
+            </div>
+            <div class="course-box padded">
+            <div class="course">
+                <div class="course-body padded">
+                <h1 class="course-title"> Philosophy</h1>
+                </div>
+            </div>
+            </div>
+            <div class="course-box padded">
+            <div class="course">
+                <div class="course-body padded">
+                <h1 class="course-title"> Computer Science</h1>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- end courses section -->
+    
+    <!-- <div class="main-container">
+>>>>>>> 37b96ae49149be5514f20af2cbdbb97f89d948c6
         <div class="header">
             <div class="logo"><img class="logo" src="images\EasyLearn_logo.png" alt="Easy Learn" srcset="" > </div>
             <div class="main-nav"><h3>Navigation goes here</h3></div>
@@ -51,6 +88,7 @@
                 <div class="course-box"></div>
             </div>
         </div>
+        
     </div>
     <div class="footer">
         <h2> Footer goes here</h2>
