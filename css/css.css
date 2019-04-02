@@ -30,7 +30,6 @@ div.footer{
 }
 /* Header css */
 div.header{
-    width:97.4%;
     height: 40%;
     background-color: #017a84;
     margin: 0px 0px 0px 0px;
@@ -83,16 +82,7 @@ div.user-info{
     /* padding: 0.8rem; */
 
 }
-/* Course box css */
-div.course-box{
-    width:30%;
-    height: 100px;
-    background-color: #017a84;
-    margin-right: 3%;
-    position: flex;
-    
 
-}
 
 /* Logo img css */
 img.logo{
@@ -156,6 +146,14 @@ img.logo{
 *{
     box-sizing: border-box;
   }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover{
+      text-decoration: none;
+      color: inherit;
+  }
   .padded{
     padding: 0.8rem;
   }
@@ -170,9 +168,10 @@ img.logo{
     width: 33.3333%;
   }
   .course{
-    height: 250px;
-    background: #a8a8a8;
+    height: 150px;
+    background: #f1f1f1;
     display: flex;
+    border-radius: 4px;
     align-items: center;
     justify-content: center;
   }
@@ -181,6 +180,6 @@ img.logo{
     margin: auto;
   }
   .course-title{
-    color: #f1f1f1;
+    color: #1f1f1f;
     font-weight: lighter;
   }
