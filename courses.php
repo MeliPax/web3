@@ -19,8 +19,7 @@
     if ($sql && $sql->num_rows == 0) { header("location: login.php"); }
 
     mysqli_close($conn);
-        
-
+      
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,31 +47,35 @@
         <div class="section-heading padded">
         <h2>Courses</h2>
         </div>
-        <div class="courses-list row">
-            <div class="course-box padded">
-            <a href="#" title="">
-            <div class="course">
-                <div class="course-body padded">
-                <h1 class="course-title"> Literature</h1>
-                </div>
-            </div>
-            </a>
-            </div>
-            <div class="course-box padded">
-            <div class="course">
-                <div class="course-body padded">
-                <h1 class="course-title"> Philosophy</h1>
-                </div>
-            </div>
-            </div>
-            <div class="course-box padded">
-            <div class="course">
-                <div class="course-body padded">
-                <h1 class="course-title"> Computer Science</h1>
-                </div>
-            </div>
-            </div>
-        </div>
+        <?php
+            /* 
+                1. Database request query for course page data
+                    1.1. list all the courses available in the database
+                    1.2. link each to the content page
+            */ 
+            include ("db_connection/db_connect.php");
+
+            // query all courses available in the database
+            $sql = mysqli_query( $conn,"SELECT * from courses");
+            
+            if(!$sql){ 
+                die('Could not get data: ' . mysql_error());
+            }
+            while($row = mysqli_fetch_array($sql, MYSQL_ASSOC)) {
+                $course=$row['course'];
+                echo "
+                    <div class='course-box padded'>
+                        <a href='#' title=''>
+                            <div class='course'>
+                                <div class='course-body padded'>
+                                <h1 class='course-title'> $course</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                ";
+            } 
+        ?>
     </div>
     </div>
     </div>
