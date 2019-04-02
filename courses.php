@@ -6,16 +6,19 @@
             3.1. If valid show courses
             3.2. else redirect to home
     */
+    // $conn = new mysqli($servername, $username, $password,$db);
     include ("db_connection/db_connect.php");
     $email= $_POST['email'];
     $password= $_POST['password'];
     
     // User input fetch 
-    // $sql = "SELECT * FROM users where $email=='$row['email']' and $password=='$row[password]'";
-    $result = $conn->query($sql);
-    
-    if ($result->num_rows > 0) {
-        // output data of each row
+    // $sql =("SELECT * from users where $row['email']== $email and $row['password']== $password";
+    $sql = mysqli_query( $conn,"SELECT * from users where email='$email' and password='$password'"); 
+    // $result = mysqli_query($conn , $sql);
+    if(!$sql){echo $conn->error; }
+    if ($sql && $sql->num_rows > 0) { header("location: quiz.php"); }else{ header("location: login.php"); }
+
+    mysqli_close();
         
 
 ?>
@@ -52,7 +55,7 @@
     <div class="footer">
         <h2> Footer goes here</h2>
     </div> -->
-    <h1>Email: <?php echo $_POST['email'];?></h1>
-    <h2>password <?php echo $_POST['password'];?></h2>
+    <!-- <h1>Email: <?php echo $_POST['email'];?></h1>
+    <h2>password <?php echo $_POST['password'];?></h2> -->
 </body>
 </html>

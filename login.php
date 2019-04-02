@@ -19,14 +19,14 @@
     <!-- form start -->
         <div class="login-form">
             <h1>Sign In </h1>
-            <form action="lesson.php" method="post">
+            <form action="courses.php" method="post">
                 <div class="form-items">
                     <label for="email">Email</label> 
-                    <input type="email" name="email"><br>
+                    <input type="email" name="email" value="mfura@gmail.com"><br>
                 </div>
                 <div class="form-items">
                     <label for="password">Password</label> 
-                    <input type="password" name="password"><br><br>
+                    <input type="password" name="password" value="pass"><br><br>
                 </div>
                 <button type="submit"> Login</button>
             </form>
