@@ -29,13 +29,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/css.css">
     <script src="js/js.js"></script>
-    <title>Lesson Page</title>
+    <title>Subjects list</title>
 </head>
 <body>
     <div class="main-container">
         <div class="header">
-            <div class="logo"><img class="logo" src="images\EasyLearn_logo.png" alt="Easy Learn" srcset="" > </div>
-            <div class="main-nav"><h3>Navigation goes here</h3></div>
+            <div class="logo"> <a href="courses.php"> <img class="logo" src="images\EasyLearn_logo.png" alt="Easy Learn" srcset="" ></a> </div>
+            <div class="main-nav"><h3></h3></div>
             <div class="user-info">
                 <div class="profile-pic"></div>
                 <div class="user-name"></div>
@@ -65,7 +65,7 @@
                 $course=$row['course'];
                 echo "
                     <div class='course-box padded'>
-                        <a href='#' title=''>
+                        <a href='lesson.php' title=''>
                             <div class='course'>
                                 <div class='course-body padded'>
                                 <h1 class='course-title'> $course</h1>
@@ -80,9 +80,8 @@
     </div>
     </div>
     <div class="footer">
-        <h2> Footer goes here</h2>
+        <h2> &copy; EasyLearn Company</h2>
     </div>
-    <!-- <h1>Email: <?php echo $_POST['email'];?></h1>
-    <h2>password <?php echo $_POST['password'];?></h2> -->
+
 </body>
 </html>

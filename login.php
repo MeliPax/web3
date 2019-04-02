@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/css.css">
     <script src="js/js.js"></script>
-    <title>Home Page</title>
+    <title>Login Page</title>
 </head>
 <body>
     <div class="login-page">
     <!-- logo -->
     <div class="logo">
-        <img class="login-logo" src="images\EasyLearn_logo.png" alt="Easy Learn" srcset="" > 
+        <a href="lesson.php"><img class="login-logo" src="images\EasyLearn_logo.png" alt="Easy Learn" srcset="" ></a> 
     </div>
     <!-- logo end -->
 

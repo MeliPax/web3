@@ -10,8 +10,8 @@
 <body>
     
 <div class="header">
-    <div class="logo"><img class="logo" src="images\EasyLearn_logo.png" alt="Easy Learn" srcset="" > </div>
-    <div class="main-nav"><h3>Navigation goes here</h3></div>
+    <div class="logo"><a href="courses.php"> <img class="logo" src="images\EasyLearn_logo.png" alt="Easy Learn" srcset="" ></a></div>
+    <div class="main-nav"><h3></h3></div>
     <div class="user-info">
         <div class="profile-pic"></div>
         <div class="user-name"></div>
@@ -66,7 +66,7 @@
 </div>
 
 <div class="footer">
-    <h2> Footer goes here</h2>
+    <h2> &copy; EasyLearn Company</h2>
 </div>
 </body>
 </html>

@@ -1,17 +1,28 @@
+<?php 
+
+    // Databse connection
+    // Fetching for data in the data base
+    include ("db_connection/db_connect.php");
+    $sql = mysqli_query( $conn,"SELECT * from content where unit"); 
+    if(!$sql){echo $conn->error; }
+    if ($sql && $sql->num_rows == 0) { header("location: login.php"); }
+    mysqli_close($conn);
+      
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Lesson</title>
     <link href="css/css.css" rel="stylesheet">
 </head>
 <body>
     
 <div class="header">
-    <div class="logo"><img class="logo" src="images\EasyLearn_logo.png" alt="Easy Learn" srcset="" > </div>
-    <div class="main-nav"><h3>Navigation goes here</h3></div>
+    <div class="logo"> <img class="logo" src="images\EasyLearn_logo.png" alt="Easy Learn" srcset="" > </div>
+    <div class="main-nav"><h3></h3></div>
     <div class="user-info">
         <div class="profile-pic"></div>
         <div class="user-name"></div>
@@ -47,7 +58,7 @@
 </div>
 
 <div class="footer">
-    <h2> Footer goes here</h2>
+    <h2> &copy; EasyLearn Company</h2>
 </div>
 </body>
 </html>
