@@ -75,7 +75,7 @@ div.user-info{
 }
 /* Course listing css*/
 .course-list{
-    background-color:yellow; 
+    /* background-color:yellow;  */
     width:100%;
     min-height: 100%;
     justify-self: center;
@@ -114,11 +114,12 @@ img.logo{
     /* justify-content: center; */
 }
 .login-logo{
-    height:100px;
-    width: 100px;
+    margin-top: 50px;
+    height:150px;
+    width: 150px;
 }
 .login-form{
-    margin-top: 95px;
+    margin-top: 20px;
     width: 20%;
     background-color: white;
     padding:  50px 40px;

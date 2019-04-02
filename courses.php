@@ -16,9 +16,9 @@
     $sql = mysqli_query( $conn,"SELECT * from users where email='$email' and password='$password'"); 
     // $result = mysqli_query($conn , $sql);
     if(!$sql){echo $conn->error; }
-    if ($sql && $sql->num_rows > 0) { header("location: quiz.php"); }else{ header("location: login.php"); }
+    if ($sql && $sql->num_rows == 0) { header("location: login.php"); }
 
-    mysqli_close();
+    mysqli_close($conn);
         
 
 ?>
@@ -33,7 +33,7 @@
     <title>Lesson Page</title>
 </head>
 <body>
-    <!-- <div class="main-container">
+    <div class="main-container">
         <div class="header">
             <div class="logo"><img class="logo" src="images\EasyLearn_logo.png" alt="Easy Learn" srcset="" > </div>
             <div class="main-nav"><h3>Navigation goes here</h3></div>
@@ -54,7 +54,7 @@
     </div>
     <div class="footer">
         <h2> Footer goes here</h2>
-    </div> -->
+    </div>
     <!-- <h1>Email: <?php echo $_POST['email'];?></h1>
     <h2>password <?php echo $_POST['password'];?></h2> -->
 </body>
