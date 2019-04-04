@@ -2,12 +2,11 @@
 
     // Databse connection
     // Fetching for data in the data base
-    include ("db_connection/db_connect.php");
-    $sql = mysqli_query( $conn,"SELECT * from content where unit"); 
-    if(!$sql){echo $conn->error; }
-    if ($sql && $sql->num_rows == 0) { header("location: login.php"); }
-    mysqli_close($conn);
-      
+    // include ("db_connection/db_connect.php");
+    // $sql = mysqli_query( $conn,"SELECT * from content"); 
+    // if(!$sql){echo $conn->error; }
+    // if ($sql && $sql->num_rows == 0) { header("location: login.php"); }
+    // mysqli_close($conn);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,6 +38,10 @@
                     <h2 class="margin-zero">Database</h4>
                     <ul class="lesson-nav">
                         <li><a href="lesson.php">Intro</a></li>
+                        <li><a href="lesson.php">Quiz 1</a></li>
+                        <li><a href="lesson.php">Quiz 2</a></li>
+                        <li><a href="lesson.php">Quiz 3</a></li>
+                        <li><a href="lesson.php">Quiz 4</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,10 +49,23 @@
                 <div class="lesson-content--body">
                     <h2 class="margin-zero text-center">Database: Introduction</h4>
                     <div class="lesson-text padded">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p> <h3>Important Terminology</h3>
+                        
+                        <strong>Database:</strong> Database is a collection of inter-related data which helps in efficient retrieval, insertion and deletion of data from database and organizes the data in the form of tables, views, schemas, reports etc. For Example, university database organizes the data about students, faculty, and admin staff etc. which helps in efficient retrieval, insertion and deletion of data from it.
+                        <br><br>
+                        <strong>Database Management System:</strong>The software which is used to manage database is called Database Management System (DBMS). For Example, MySQL, Oracle etc. are popular commercial DBMS used in different applications. DBMS allows users the following tasks:
+                            <br><br>
+                        <strong>Data Definition:</strong> It helps in creation, modification and removal of definitions that define the organization of data in database.
+                        <br><br>
+                        <strong>Data Updation:</strong> It helps in insertion, modification and deletion of the actual data in the database.
+                        <br><br>
+
+                        <strong>Data Retrieval:</strong> It helps in retrieval of data from the database which can be used by applications for various purposes.
+                        <br><br>
+                        <strong>User Administration:</strong> It helps in registering and monitoring users, enforcing data security, monitoring performance, maintaining data integrity, dealing with concurrency control and recovering information corrupted by unexpected failure.</p>
                     </div>
                     <div class="text-center padded-tb">
-                    <a href="quiz.php" class="action-btn button" id="start-quiz">Start Quiz</a>
+                    <a href="quiz_type1.php" class="action-btn button" id="start-quiz">Start Quiz</a>
                     </div>
                 </div>
             </div>
