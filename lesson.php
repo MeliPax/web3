@@ -38,12 +38,13 @@
                     <h2 class="margin-zero">Database</h4>
                     <ul class="lesson-nav">
                         <li><a href="lesson.php">Intro</a></li>
-                        <li><a href="lesson.php">Quiz 1</a></li>
-                        <li><a href="lesson.php">Quiz 2</a></li>
-                        <li><a href="lesson.php">Quiz 3</a></li>
-                        <li><a href="lesson.php">Quiz 4</a></li>
+                        <li><a href="quiz_type1.php">Quiz 1</a></li>
+                        <li><a href="quiz_type2.php">Quiz 2</a></li>
+                        <li><a href="quiz_type3.php">Quiz 3</a></li>
+                        <li><a href="quiz_type4.php">Quiz 4</a></li>
                     </ul>
                 </div>
+                <span class="contact-btn"><br><br><br><br><a href="contact.php" >Chat with your lecture</a></span>
             </div>
             <div class="lesson-content bg-white padded">
                 <div class="lesson-content--body">

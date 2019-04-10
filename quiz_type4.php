@@ -34,6 +34,7 @@
                         <li><a class="text-underline" href="quiz_type4.php">Quiz 4</a></li>
                     </ul>
                 </div>
+                <span class="contact-btn"><br><br><br><br><a href="contact.php" >Chat with your lecture</a></span>
             </div>
             <div class="quiz-content-wrapper padded">
                 <div class="lesson-content--body">

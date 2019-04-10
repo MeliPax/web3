@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="css/css.css" rel="stylesheet">
+    <script src="js/js.js"></script>
 </head>
 <body>
     
@@ -34,33 +35,31 @@
                         <li><a href="quiz_type4.php">Quiz 4</a></li>
                     </ul>
                 </div>
+                <span class="contact-btn"><br><br><br><br><a href="contact.php" >Chat with your lecture</a></span>
             </div>
             <div class="quiz-content-wrapper padded">
                 <div class="lesson-content--body">
                     <h2 class="margin-zero">Database: Quiz</h2>
                     
-                    <!-- question one -->
                     <div class="quiz-content padded-tb">
                         <div class="question-group padded bg-white shadow">
                             <label>1. Lorem ipsum lorem isum lorem ipsum lorem ipsum</label><br/>
-                            <input type="radio" name="q1" value="Lorem Ipsum" class="radio-res">Lorem Ipsum<br/>
-                            <input type="radio" name="q1" value="Ipsum Lorem" class="radio-res">Ipsum Lorem<br/>
-                            <input type="radio" name="q1" value="Yada yada" class="radio-res">Yada yada<br/>
+                            <input type="check-box" name="q1" value="Lorem Ipsum" class="check-box-res">Lorem Ipsum<br/>
+                            <input type="check-box" name="q1" value="Ipsum Lorem" class="check-box-res">Ipsum Lorem<br/>
+                            <input type="check-box" name="q1" value="Yada yada" class="check-box-res">Yada yada<br/>
                         </div>
                     </div>
-                    <!-- question two -->
                     <div class="quiz-content padded-tb">
                         <div class="question-group padded bg-white shadow">
-                            <label>2. Lorem ipsum lorem isum lorem ipsum lorem ipsum</label><br/>
-                            <input type="radio" name="q2" value="Lorem Ipsum" class="radio-res">Lorem Ipsum<br/>
-                            <input type="radio" name="q2" value="Ipsum Lorem" class="radio-res">Ipsum Lorem<br/>
-                            <input type="radio" name="q2" value="Yada yada" class="radio-res">Yada yada<br/>
+                            <label>2. Data Definition helps to ....</label><br/>
+                            <input type="radio" name="q3" value="1" class="radio-res"> Create, modify definitions of data in the database<br/>
+                            <input type="radio" name="q3" value="2" class="radio-res"> Create, remove definitions of data in the database<br/>
+                            <input type="radio" name="q3" value="3" class="radio-res">Defines the organization of data in a database<br/>
+                            <input type="radio" name="q3" value="4" class="radio-res">All of the above<br/>
                         </div>
                     </div>
-
-
                     <div class="padded-tb text-center">
-                    <a class="action-btn button" id="start-quiz">Submit Quiz </a>
+                        <a class="action-btn button" id="start-quiz" onclick="submited()">Submit Quiz </a>
                     </div>
                 </div>
             </div>

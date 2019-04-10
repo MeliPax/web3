@@ -12,8 +12,6 @@ div.main-container{
    height: 90%;
    min-height: 1000px;
    margin: 0px 0px 0px 0px;
-   /* position: relative; */
-   bottom: 0px;
 
 }
 /* Footer css */
@@ -23,7 +21,7 @@ div.footer{
     font-size: smaller;
     color: #fff;
     background-color: #017a84; 
-    
+    clear:both !important; 
 }
 /* Header css */
 div.header{
@@ -194,8 +192,12 @@ img.logo{
 .lesson-wrapper--outer, .lesson-wrapper--inner{
 min-height: 600px;
 }
+/* .lesson-wrapper--outer{
+    margin-bottom: 0 auto -50px;
+} */
 .lesson-layout--row{
     position: relative;
+    overflow: -webkit-paged-y;
 }
 .lesson-sidebar{
     width: 20%;
@@ -220,6 +222,7 @@ min-height: 600px;
     box-sizing: border-box;
     float: left;
     min-height: 400px;
+    /* padding-bottom: 50px; */
 }
 .bg-light-grey{
     background: #f3f5f7;
@@ -227,6 +230,7 @@ min-height: 600px;
 .bg-white{
     background: #fff;
 }
+
 .button{
     display: inline-block;
     font-weight: 400;
@@ -251,11 +255,20 @@ min-height: 600px;
     color: #fff;
 }
 
-.radio-res{
+.radio-res,.check-box-res {
     margin: 10px;
 }
 
 .shadow{
     border-radius: 4px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+/* .center{
+    align-content: center;
+    margin-left:20%;
+} */
+.contact-btn{
+    margin-top:100px;
+    color:#007bff;
+    font-weight: bold;
 }
