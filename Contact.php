@@ -36,7 +36,7 @@
                         <h2 class="margin-zero text-center">Contact your lecture</h4>
                         <div class="lesson-text padded">
                             <p> <h5>*Submit this form to send any question or comment that you might be having to your lecture</h5>
-                            <form action="" method="">
+                            <form action="#">
                                 <div class="form-items">
                                     <label for="email">Your email</label> <br>
                                     <input type="email" name="email" value=""><br>

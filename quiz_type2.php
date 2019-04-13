@@ -39,14 +39,18 @@
             </div>
             <div class="quiz-content-wrapper padded">
                 <div class="lesson-content--body">
-                    <h2 class="margin-zero">Database: Quiz</h2>
+                    <h2 class="margin-zero">Database: Quiz 2</h2>
                     
                     <div class="quiz-content padded-tb">
                         <div class="question-group padded bg-white shadow">
                             <label>1. Lorem ipsum lorem isum lorem ipsum lorem ipsum</label><br/>
-                            <input type="check-box" name="q1" value="Lorem Ipsum" class="check-box-res">Lorem Ipsum<br/>
-                            <input type="check-box" name="q1" value="Ipsum Lorem" class="check-box-res">Ipsum Lorem<br/>
-                            <input type="check-box" name="q1" value="Yada yada" class="check-box-res">Yada yada<br/>
+                            <input type="checkbox" name="q1" value="Lorem Ipsum" class="check-box-res">Lorem Ipsum<br/>
+                            <input type="checkbox" name="q1" value="Ipsum Lorem" class="check-box-res">Ipsum Lorem<br/>
+                            <input type="checkbox" name="q1" value="Yada yada" class="check-box-res">Yada yada<br/>
+                            <div class="padded-tb text-center">
+                                <span class="feedback"></span>
+                                <a class="action-btn button" id="start-quiz" onclick="submited()">Submit Answer </a>
+                            </div>
                         </div>
                     </div>
                     <div class="quiz-content padded-tb">
@@ -56,10 +60,22 @@
                             <input type="radio" name="q3" value="2" class="radio-res"> Create, remove definitions of data in the database<br/>
                             <input type="radio" name="q3" value="3" class="radio-res">Defines the organization of data in a database<br/>
                             <input type="radio" name="q3" value="4" class="radio-res">All of the above<br/>
+                            <div class="padded-tb text-center">
+                                <span name="feedback"></span>
+                                <a class="action-btn button" id="start-quiz" onclick="submited()">Submit Answer </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="padded-tb text-center">
-                        <a class="action-btn button" id="start-quiz" onclick="submited()">Submit Quiz </a>
+                    <div class="quiz-content padded-tb">
+                        <div class="question-group padded bg-white shadow">
+                            <label>3. Lorem ipsum lorem isum lorem ipsum lorem ipsum</label><br/>
+                            <input type="checkbox" name="q1" value="Lorem Ipsum" class="check-box-res">Lorem Ipsum<br/>
+                            <input type="checkbox" name="q1" value="Ipsum Lorem" class="check-box-res">Ipsum Lorem<br/>
+                            <input type="checkbox" name="q1" value="Yada yada" class="check-box-res">Yada yada<br/>
+                            <div class="padded-tb text-center">
+                                <a class="action-btn button" id="start-quiz" onclick="submited()">Submit Answer </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
